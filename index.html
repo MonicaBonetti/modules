@@ -1093,4 +1093,17 @@ p{font-size:18px;}
   loadTrack(0);
 })();
 </script>
+
+  <script>
+window.addEventListener('load', function () {
+  var id = location.hash.slice(1);
+  var el = id && document.getElementById(id);
+  if (el) {
+    setTimeout(function () {
+      el.scrollIntoView({ behavior: 'instant', block: 'start' });
+    }, 100);
+  }
+});
+</script>
+  
 </body></html>
